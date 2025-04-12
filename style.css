@@ -1,11 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Added for better sizing */
+  box-sizing: border-box; /* Important for responsive design */
 }
 
 html, body {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   height: 100%;
 }
 
@@ -20,6 +20,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.8rem; /* Increased font size */
 }
 
 html {
@@ -31,9 +32,9 @@ html {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
   width: 100%;
-  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .search input {
@@ -42,4 +43,57 @@ html {
   border: 2px solid black;
   border-radius: 100px;
   text-align: center;
-  margin-bottom: 1rem; /* Add spacing when wrapping */
+  margin-bottom: 1rem; /* Spacing when wrapping */
+}
+
+.search button {
+  background: gray;
+  color: white;
+  border: 2px solid black;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px; /* More curve */
+  margin-left: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s; /* Smooth transition */
+}
+
+.search button:hover {
+  background: black; /* Optional hover effect */
+}
+
+.box {
+  width: 20vw;
+  height: 60vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  min-width: 20rem;
+  min-height: 35rem;
+  font-size: 1.8rem; /* Increased font size inside box */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .box {
+    width: 80vw;
+    height: auto;
+    min-height: 30rem;
+  }
+
+  .search input {
+    width: 80%;
+  }
+
+  .search button {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  body {
+    font-size: 1.6rem; /* Slightly smaller font for mobile */
+  }
+}
