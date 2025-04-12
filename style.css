@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Important for responsiveness */
+  box-sizing: border-box; /* Added for better sizing */
 }
 
 html, body {
@@ -32,72 +32,14 @@ html {
   justify-content: center;
   padding: 2rem;
   margin-bottom: 2rem; 
-  width: 90%;
-  max-width: 600px;
-  flex-wrap: wrap;
-  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 .search input {
-  height: 5rem;
-  flex: 1;
-  min-width: 200px;
-  padding: 0 1.5rem;
+  height: 50px;
+  width: 300px;
   border: 2px solid black;
   border-radius: 100px;
   text-align: center;
-  font-size: 1.6rem;
-}
-
-.search button {
-  height: 5rem;
-  padding: 0 2rem;
-  background: gray;
-  color: white;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-.box {
-  width: 90%;
-  max-width: 350px;
-  height: 60vh;
-  min-height: 35rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  background: white;
-}
-
-/* ---------- RESPONSIVENESS ---------- */
-@media (max-width: 768px) {
-  .box {
-    width: 80%;
-    height: 50vh;
-  }
-
-  .search {
-    flex-direction: column;
-  }
-
-  .search input, .search button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .box {
-    width: 90%;
-    height: auto;
-    padding: 2rem;
-  }
-
-  .search input, .search button {
-    font-size: 1.4rem;
-    height: 4.5rem;
-  }
-}
+  margin-bottom: 1rem; /* Add spacing when wrapping */
