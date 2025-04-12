@@ -1,11 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Important for responsive design */
+  box-sizing: border-box; 
 }
 
 html, body {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
   height: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 1.8rem; /* ⬅️ Made font slightly larger */
+  font-size: 1.8rem;
 }
 
 html {
@@ -34,16 +34,16 @@ html {
   padding: 2rem;
   margin-bottom: 2rem;
   width: 100%;
-  flex-wrap: wrap; /* ⬅️ Makes it responsive on small screens */
+  flex-wrap: wrap;
 }
 
 .search input {
   height: 50px;
   width: 300px;
   border: 2px solid black;
-  border-radius: 50px; /* ⬅️ More curved input */
+  border-radius: 50px; 
   text-align: center;
-  font-size: 1.6rem; /* input font slightly bigger */
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -53,14 +53,14 @@ html {
   border: 2px solid black;
   height: 50px;
   width: 150px;
-  border-radius: 50px; /* ⬅️ Super curved button */
+  border-radius: 50px;
   margin-left: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .search button:hover {
-  background: black; /* Optional hover effect */
+  background: black;
 }
 
 .box {
@@ -73,7 +73,7 @@ html {
   transform: translate3d(0, 0, 0);
   min-width: 20rem;
   min-height: 35rem;
-  font-size: 1.8rem; /* ⬅️ Slightly larger font inside box */
+  font-size: 1.8rem;
 }
 
 /* RESPONSIVE FIXES */
